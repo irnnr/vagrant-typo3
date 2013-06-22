@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+
+cookbook 'apt'
+cookbook 'ntp'
+cookbook 'timezone', '0.0.1'
+cookbook 'networking_basic'
+
+cookbook 'vim'
+
+cookbook 'apache2'
+cookbook 'mysql'
+cookbook 'database'
+cookbook 'php'
+
+cookbook 'graphicsmagick',
+  :github => 'jondot/graphicsmagick_cookbook'
+  
+cookbook 'typo3',
+  :github => 'irnnr/chef-typo3'
