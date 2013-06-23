@@ -16,12 +16,12 @@ A Vagrant file to get you up and running with TYPO3 in a few minutes.
 
 ## Setup
 
-1. Download and install VirtualBox - choose the link next to OS X hosts
-2. Download and install Vagrant - the most recent version should be fine, choose the .dmg file
+1. Download and install VirtualBox
+2. Download and install Vagrant - the most recent version should be fine
 3. Install the vagrant-hostmanager plugin: In a terminal execute `vagrant plugin install vagrant-hostmanager` 
 4. Use RubyGems to install Librarian Chef by executing the following command a terminal: `gem install librarian-chef`
-5. Check out your project from source control (git)
-6. Let Librarian fetch all the Chef cookbooks and their dependencies by calling `librarian-chef install
+5. Check out your project from source control
+6. Let Librarian fetch all the Chef cookbooks and their dependencies by executing `librarian-chef install`
 7. Now you are ready to `vagrant up` in your project directory
 
 
