@@ -1,4 +1,3 @@
-
 $project_name = 'vagrant-typo3'
 
 # ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 
@@ -55,7 +54,8 @@ Vagrant.configure("2") do |config|
         :server_root_password   => "password",
         :server_repl_password   => "password",
         :server_debian_password => "password",
-        :allow_remote_root      => true
+        :allow_remote_root      => true,
+        :bind_address           => "127.0.0.1"
       },
       :git    => {
         :prefix => "/usr/local"
