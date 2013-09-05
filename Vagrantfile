@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
   config.hostmanager.manage_host = true
   
   config.vm.synced_folder 'htdocs', '/var/www/site-' + $project_name, 
-    :owner=>'www-data', :group=>'www-data', :extra => 'dmode=775,fmode=775'
+    :owner=>'www-data', :group=>'www-data', :mount_options => ['dmode=775,fmode=775']
   
   # forward http
   config.vm.network :forwarded_port, guest: 80, host: 8800
