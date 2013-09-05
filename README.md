@@ -6,7 +6,7 @@ A Vagrant file to get you up and running with TYPO3 in a few minutes.
 ## Requirements
 
 * Oracle VirtualBox
-* Vagrant (of course)
+* Vagrant 1.3.0+
 * vagrant-hostmanager plugin to easily access the virtual machine using domain names
 * Ruby (comes pre-installed on OS X)
 * RubyGems - the Ruby package manager (also comes with OS X) 
