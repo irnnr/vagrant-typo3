@@ -36,6 +36,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.customize ["modifyvm", :id, "--hwvirtex", "on"]
   end
 
+  config.omnibus.chef_version = "11.12.4"
+
   config.vm.provision :chef_solo do |chef|
     
     # Chef run list
