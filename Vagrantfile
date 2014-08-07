@@ -24,12 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # automatically manage /etc/hosts on hosts and guests
   config.hostmanager.enabled = true
   config.hostmanager.manage_host = true
-  
-  # forward http
-  config.vm.network :forwarded_port, guest: 80, host: 8800
-  # forward MySQL
-  config.vm.network :forwarded_port, guest: 3306, host: 33060
-  
+
   config.ssh.forward_agent = true
   
   config.vm.provider "virtualbox" do |vb|
