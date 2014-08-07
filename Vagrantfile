@@ -50,7 +50,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe 'php::module_gd'
     chef.add_recipe 'php::module_apc'
     chef.add_recipe 'apache2'
-    chef.add_recipe 'graphicsmagick'
     chef.add_recipe 'typo3'
     chef.add_recipe 'typo3::scheduler'
 
