@@ -44,6 +44,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe 'apt'
     chef.add_recipe 'vim'
     chef.add_recipe 'networking_basic'
+    chef.add_recipe 'timezone'
     chef.add_recipe 'mysql::server'
     chef.add_recipe 'php'
     chef.add_recipe 'php::module_gd'
