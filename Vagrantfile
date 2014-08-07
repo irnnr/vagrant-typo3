@@ -52,6 +52,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe 'apache2'
     chef.add_recipe 'typo3'
     chef.add_recipe 'typo3::scheduler'
+    chef.add_recipe 'typo3::vagrant'
 
     chef.json = {
       :mysql  => {
