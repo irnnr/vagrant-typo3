@@ -4,7 +4,6 @@ $project_name = 'vagrant-typo3'
 Vagrant.require_version ">= 1.5.0"
 VAGRANTFILE_API_VERSION = "2"
 
-Vagrant.require_plugin('vagrant-hostmanager')
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "precise64"
