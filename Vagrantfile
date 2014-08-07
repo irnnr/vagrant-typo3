@@ -1,9 +1,10 @@
 $project_name = 'vagrant-typo3'
 
 # ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 
+VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.require_plugin('vagrant-hostmanager')
-Vagrant.configure("2") do |config|
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "precise64"
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
