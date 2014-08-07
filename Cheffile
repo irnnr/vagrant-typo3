@@ -17,8 +17,5 @@ cookbook 'mysql'
 cookbook 'database'
 cookbook 'php'
 
-cookbook 'graphicsmagick',
-  :github => 'jondot/graphicsmagick_cookbook'
-  
 cookbook 'typo3',
   :github => 'irnnr/chef-typo3'
