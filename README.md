@@ -39,7 +39,7 @@ A Vagrant file to get you up and running with TYPO3 in a few minutes.
 
 Authors: [Ingo Renner](http://github.com/irnnr) [(@irnnr)](http://twitter.com/irnnr)
 
-Copyright: 2013, Ingo Renner
+Copyright: 2013-2014, Ingo Renner
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
