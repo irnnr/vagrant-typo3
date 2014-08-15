@@ -29,6 +29,9 @@ A Vagrant file to get you up and running with TYPO3 in a few minutes.
 6. Let Librarian fetch all the Chef cookbooks and their dependencies by executing `librarian-chef install`
 7. Now you are ready to `vagrant up` in your project directory
 
+## Caveats
+
+This box does not set up folder syncing since that can be slow. Personally I use PhpStorm to deploy on save. Alternatively you can try Capistrano in a combination with Guard to run deployments or any other deployment tool you prefer.
 
 ## Contributing
 
