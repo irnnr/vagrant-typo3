@@ -71,7 +71,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :typo3  => {
         :version => '6.2.4',
         :package => 'source',
-        :site_name => $project_name
+        :site_name => $project_name,
+        :application_context => 'Development'
       }
     }
   end
