@@ -26,12 +26,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.hostmanager.manage_host = true
 
   config.ssh.forward_agent = true
-  
+
   config.vm.provider "virtualbox" do |vb|
     vb.name = "www.#{$project_name}.dev"
-    
+
     vb.gui = false
-    
+
     vb.customize ["modifyvm", :id, "--memory", "1024"]
     vb.customize ["modifyvm", :id, "--hwvirtex", "on"]
   end
@@ -39,7 +39,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.omnibus.chef_version = "11.12.4"
 
   config.vm.provision :chef_solo do |chef|
-    
+
     # Chef run list
     chef.add_recipe 'apt'
     chef.add_recipe 'vim'
