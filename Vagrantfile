@@ -69,7 +69,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         :default_site_enabled => false
       },
       :typo3  => {
-        :version => '6.2.4',
+        :version => '6.2.5',
         :package => 'source',
         :site_name => $project_name,
         :application_context => 'Development'
